@@ -1,9 +1,6 @@
 const products = require('./data');
 
-const minPrice = 10000;
-const category = 'home';
-
-function filterAvailableProducts(products) {
+function filterAvailableProducts(products, minPrice, category) {
     return [...products]
         .filter(product => product.available === true)
         .filter(product => product.price >= minPrice)
@@ -11,7 +8,7 @@ function filterAvailableProducts(products) {
         .sort((a, b) => a.name.localeCompare(b.name));
 }
 
-console.log(filterAvailableProducts(products));
+console.log(filterAvailableProducts(products, 10000, 'home'));
 
 module.exports = {
     filterAvailableProducts: filterAvailableProducts
