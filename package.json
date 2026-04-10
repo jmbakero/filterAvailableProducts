@@ -1,0 +1,27 @@
+{
+  "name": "filteravailableproducts",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/jmbakero/filterAvailableProducts#readme",
+  "bugs": {
+    "url": "https://github.com/jmbakero/filterAvailableProducts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmbakero/filterAvailableProducts.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "filterAvailableProducts.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "jest": "^30.3.0"
+  },
+  "keywords": []
+}
