@@ -10,3 +10,10 @@ describe('filterAvailableProducts', () => {
         expect(products).toEqual(original);
     })
 });
+
+test('filterAvailableProducts should return only available products with price >= 10000 and category "home", sorted by name', () => {
+    const result = filterAvailableProducts(products);
+    expect(result).toEqual([
+        { name: 'Szék', price: 45000, category: 'home', available: true }
+    ]);
+});
